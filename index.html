@@ -5,8 +5,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
+
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/FontAwesome.otf">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/LineIcons.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style2.css" />
       <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -19,231 +32,207 @@
   </head>
   
   <body>
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" style="color: rgb(98, 98, 211);" href="#">DOCTOR</a>
+    <header id="headerImage" class="padlr pb-5">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" style="color: rgb(98, 98, 211);" href="#">DOCTOR</a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav m-auto mr-auto mt-2 mt-lg-0 ">
-          <li class="nav-item active">
-            <a class="nav-link" href="#" style="color: orangered;">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav m-auto mr-auto mt-2 mt-lg-0 ">
             <li class="nav-item active">
-            <a class="nav-link" href="#idabout">About</a>
-          </li>
-          <li class="nav-item">
+              <a class="nav-link" href="#" style="color: orangered;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item active">
+              <a class="nav-link" href="#idabout">About</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item active">
+              <a class="nav-link" href="#freeversion">Services</a>
+            </li>
             <li class="nav-item active">
-            <a class="nav-link" href="#freeversion">Services</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <li class="nav-item active">
-            <a class="nav-link" href="#ourblo">Blog</a>
-          </li>
-          <li class="nav-item">
-            <li class="nav-item active">
-            <a class="nav-link" href="#contactus">Contact</a>
-          </li>
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>       -->
-        <button class="btn bg-danger active" type="submit" style="color: white; border-radius: 40px;">Download</button>
+              <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item active">
+              <a class="nav-link" href="#ourblo">Blog</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item active">
+              <a class="nav-link" href="#contactus">Contact</a>
+            </li>
+          </ul>
+          <button class="main-btn active" type="submit" style="color: white; border-radius: 40px;">Download</button>
+        </nav>
 
-      </div>
-    </header>
-  </br>
-
-    <div class="row container-fluid">
-      <!-- <div class="column" style="width: 50%; float: left;">
-        <img src="/assets/images/header-hero.jpg" alt="Snow" style="width:100%">
-      </div>
-      <div class="column" style="width: 50%; float: left;">
-        <img src="/assets/images/about.png" alt="Forest" style="width:100%">
-      </div> -->
-
-      <div class="container-fluid">
-        <div class="row">
+        <div class="row header-hero-content pt-5">
           <div class="col-lg-6">
-            <div class="imageContent1 bg-image" id="image11">
-              <div style="
-              padding-top: 117px;
-              padding-left: 117px;
-          ">
-                <h1 class="pl-5"><span style="font-weight: bolder; color: black; ">Your</span><span style="color: orangered " class="pl-3 font-weight-normal ">Consultancy</span></h1>
+            <div class="pb-5">
+              <h1 class="hero-title"><span style="font-weight: bolder; color: black; ">Your</span> 
+                <span style="color: orangered " class="pl-3 font-weight-normal ">Consultancy</span>
+              </h1>
 
-                        <h1 class="pl-5">
-                            <span style="font-weight: normal; color: black; ">Partner for </span>
-
-                            <span style="font-weight: bolder; color: black; ">Growth.</span>
-
-                        </h1>
-                        <p class="ml-5 mt-5">Phasellu vel elit efficitur, gravida libero sit amret, scelerisque tortor arcu, commodo sit amet nulla sed.</p>
-              </div>
-              <!-- <img src="assets/images/page-banner-1.jpg" alt=" " id="pagebanner1"> -->
+              <h1 class="hero-title"> 
+                <span style="font-weight: normal; color: black; ">Partner for </span>
+                <span style="font-weight: bolder; color: black; ">Growth.</span>
+              </h1>
+              <p class="text">Phasellu vel elit efficitur, gravida libero sit amret, scelerisque tortor arcu, commodo sit amet nulla sed.</p>
             </div>
-            <div class="row pt-5 pl-5 ">
-              <div class="col-8" style="
-              padding-left: 101px;
-          ">
+            <div class="row header-singup pt-5">
+              <div class="col">
                 <input class="form-control mr-sm-2" style="border: hidden;" type="text" placeholder="username@yourdomain.com">
-
               </div>
-              <div class="col-4">
-                  <button class="btn btn-danger navbar-btn" style="border-radius: 40px;">SIGN UP</button>
+              <div class="col">
+                  <button class="main-btn">SIGN UP</button>
               </div>
+            </div>
           </div>
-          </div>
-          <div class="col-lg-3">
+          <div class="col-lg-6 header-hero-image">
             <img src="assets/images/hero-image.png" alt=" ">
           </div>
         </div>
-      </div>
+    </header>
     
-      <div class="about1 container text-lg-center">
-      </br></br></br></br>
-        <div class="font-weight-bold" style="color: orangered;" id="idabout">WELCOME</div>
-        <div>
+    <div class="container-fluid text-center pt-5">
+      <div class="about-title pt-5">
+        <div class="welcome" style="color: orangered;">WELCOME</div>
+        <div class="title">
             <h3><span>Our 10 years working experiance to</span> <span class="font-weight-normal">take care of your</span></h3>
             <h3 class="font-weight-normal">business goal.</h3>
         </div>
-
+  
         <img src="assets/images/about.png" class="mt-5" alt=" ">
-        <div class="mt-5 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti fuga assumenda harum mollitia architecto nemo, possimus illum accusamus error excepturi. Alias iusto esse, porro suscipit assumenda sint explicabo sunt non. </div>
+        <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti fuga assumenda harum mollitia architecto nemo, possimus illum accusamus error excepturi. Alias iusto esse, porro suscipit assumenda sint explicabo sunt non. </div>  
+      </div>
     </div>
 
     
-    <div class="middle container-fluid">
-        <div class="counting-sec">
-          <div class="inner-width">
-              <div class="col">
-                  <!-- <i class="far fa-smile-wink"></i> -->
-                  <div class="num">123</div>
-                  Clients
-              </div>
-              <div class="col">
-                  <!-- <i class="far fa-smile-wink"></i> -->
-                  <div class="num">90</div>
-                  Satisfaction
-              </div>
-              <div class="col">
-                  <!-- <i class="far fa-smile-wink"></i> -->
-                  <div class="num">428</div>
-                  Projects
-              </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="container-fluid text-lg-center">
-      <div>
-      </br></br>
-        <span id="freeversion"><b>You are using</b> <span style="color: orangered;">Free </span>Lite Version</span>
-      </div>
-      <div>
-        <span>Please, purchase full version to get all sections, pages and features</span>
-      </div>
-      <div>
-      </br></br>
-        <button class="btn btn-danger navbar-btn" style="border-radius: 40px;">Purchase Now</button>
-      </div>
-    </br></br></br></br></br>
-      <div class="pricingplan">
-        <h4 style="color: orangered;">PRICING PLANS</h4>
-        <span style="font-size: 31;"><b>Providing Best Pricing</b> For Your </br>Business</span>
-      </div>
-    </div>
-
-    <div class="container-fluid ">
-    </br></br></br>
-      <div class="row m-auto">
-        <div class="col-lg-4 text-lg-center">
-          <span><span style="font-size: 40px;"><b>50</b>/m.</span><span style="color: orangered;font-size: 25px;">$</span></span>
-        </br></br>
-          <h5 class="">
-            <span class="px-3 py-2 badge-pill" style="background-color:  #4da6ff
-            ; color: white; font-weight: normal; text-align: center;;">20% off</span> <span><b>Basic</b></span></h5>
-            </br></br>
-            <ul style="list-style-type:none; opacity: 70%;">
-              <li>Full Accesss</li></br>
-              <li>Unlimited Bandwidth</li></br>
-              <li>50 gb Spaces</li></br>
-              <li>1 Month Support</li>
-            </ul>
-
-            <div class="py-3 px-2 mt-3">
-              <button type="button" class=" btn  btn-lg  text-md-center" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" style="background-color: white;">SIGN UP NOW!</button>
-
-          </div>
-        </div>
-        <div class="col-lg-4 text-lg-center">
-          <span><span style="font-size: 40px;"><b>69</b>/m.</span><span style="color: orangered;font-size: 25px;">$</span></span>
-        </br></br>
-          <h5 class="">
-            <span class="px-3 py-2 badge-pill" style="background-color:  orangered
-            ; color: white; font-weight: normal; text-align: center;">Special</span> <span><b>Standard</b></span></h5>
-            </br></br>
-            <ul style="list-style-type:none;opacity: 70%;">
-              <li>Full Accesss</li></br>
-              <li>Unlimited Bandwidth</li></br>
-              <li>50 gb Spaces</li></br>
-              <li>1 Month Support</li>
-            </ul>
-
-            <div class="py-3 px-2 mt-3">
-              <button type="button" class=" btn  btn-lg  text-md-center px-3 py-2 badge-pill" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" style="background-color:  orangered
-              ; color: white; font-weight: normal; text-align: center;">SIGN UP NOW!</button>
-
-          </div>
-        </div>
-        <div class="col-lg-4 text-lg-center">
-          <span><span style="font-size: 40px;"><b>99</b>/m.</span><span style="color: orangered;font-size: 25px;">$</span></span>
-        </br></br>
-          <h5 class="">
-            <span class="px-3 py-2 badge-pill" style="background-color:  #0aaf33
-            ; color: white; font-weight: normal; text-align: center;;">New</span> <span><b>Premium</b></span></h5>
-            </br></br>
-            <ul style="list-style-type:none; opacity: 70%;">
-              <li>Full Accesss</li></br>
-              <li>Unlimited Bandwidth</li></br>
-              <li>50 gb Spaces</li></br>
-              <li>1 Month Support</li>
-            </ul>
-
-            <div class="py-3 px-2 mt-3">
-              <button type="button" class=" btn  btn-lg  text-md-center" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" style="background-color: white;">SIGN UP NOW!</button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
     <div class="container-fluid">
-    </br></br></br></br></br></br>
+        <div class="project-menu padlr pt-5">
+          <div class="row">
+              <div class="col d-flex">
+                  <i class="fa fa-exclamation-triangle shape-1"></i>
+                  <div>
+                    <div class="num">183</div>
+                    Clients
+                  </div>
+              </div>
+              <div class="col d-flex">
+                <i class="fa fa-exclamation-triangle shape-1"></i>
+                <div>
+                  <div class="num">99</div>
+                  Satisfaction
+                </div>
+            </div>
+            <div class="col d-flex">
+              <i class="fa fa-exclamation-triangle shape-1"></i>
+              <div>
+                <div class="num">452</div>
+                Projects
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid padlr text-lg-center single-pricing">
+      <div class="row">
+        <div class="col text-center">
+          <h1>You are using <span style="color: orangered;">Free</span> Lite Version</h1>
+          <p style="font-size: large;" class="pb-4">Please, purchase full version to get all sections, pages and features</p>
+          <button class="main-btn">Purchase Now</button>
+        </div>
+      </div>
+
+      <div class="row price pt-5">
+        <div class="col-12 text-center">
+          <div style="color: orangered;">PRICING PLANS</div>
+          <h4><span style="font-size: larger; font-weight: bolder;">Providing Best Pricing</span> <span style="font-weight: bold;">For Your</span></h4>
+          <p style="font-size: x-large; font-weight: bold; color: black;">Business</p>
+        </div>
+      </div>
+
+      <div class="row text-justify-center padlr">
+        <div class="col-lg-4 col-md-6 text-center single-pricing pricing-color-1 pricing-list pri-border-bottom">
+          <div class="bg-price text-center pricing-price">
+              <h4> <span class="price font-weight-bold ">50/m.</span> <span style="color: orangered;">$</span></h4>
+          </div>
+          <div class="p-3 pricing-title pricing-color-2">
+              <button class="btn">20% off</button> <span class="title">Basic</span>
+          </div>
+
+          <ul class="list-group-flush">
+              <li class="list-group-flush p-2">Full Access</li>
+              <li class="list-group-flush p-2">Unlimited Bandwidth</li>
+              <li class="list-group-flush p-2">50gb Space</li>
+              <li class="list-group-flush p-2">1 Month Support</li>
+          </ul>
+          <div class="pricing-btn">
+              <button type="button" class="main-btn main-btn-2  btn-lg  text-md-center" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" style="background-color: white;">SIGN UP NOW!</button>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center single-pricing pricing-active pricing-color-2 pricing-list pri-border-bottom">
+          <div class="bg-price text-center pricing-price ">
+              <h4> <span class="price font-weight-bold ">69/m.</span> <span style="color: orangered;">$</span></h4>
+          </div>
+          <div class="p-3 pricing-title pricing-color-2">
+              <button class="btn ">Special</button> <span class="title">Standard</span>
+          </div>
+
+          <ul class="list-group-flush">
+              <li class="list-group-flush p-2">Full Access</li>
+              <li class="list-group-flush p-2">Unlimited Bandwidth</li>
+              <li class="list-group-flush p-2">50gb Space</li>
+              <li class="list-group-flush p-2">1 Month Support</li>
+          </ul>
+          <div class="pricing-btn">
+              <button type="button" class="main-btn btn  btn-lg  text-md-center" data-toggle="modal" aria-pressed="false" data-target="#exampleModal">SIGN UP NOW!</button>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center single-pricing pricing-color-3 pricing-list pri-border-bottom">
+          <div class="bg-price text-center pricing-price">
+              <h4> <span class="price font-weight-bold ">99/m.</span> <span style="color: orangered;">$</span></h4>
+          </div>
+          <div class="p-3 pricing-title pricing-color-2">
+              <button class="btn">New</button> <span class="title">Premium</span>
+          </div>
+
+          <ul class="list-group-flush">
+              <li class="list-group-flush p-2">Full Access</li>
+              <li class="list-group-flush p-2">Unlimited Bandwidth</li>
+              <li class="list-group-flush p-2">50gb Space</li>
+              <li class="list-group-flush p-2">1 Month Support</li>
+          </ul>
+          <div class="pricing-btn">
+              <button type="button" class="main-btn main-btn-2  btn-lg  text-md-center" data-toggle="modal" aria-pressed="false" data-target="#exampleModal" style="background-color: white;">SIGN UP NOW!</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container-fluid padlr">
       <div class="row text-md-center">
-        <div class="col-lg-4" style="align-items:flex-end;">
+        <div class="col" style="align-items:flex-end;">
           <img src="assets/images/brand-1.png" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col">
           <img src="assets/images/brand-2.png" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col">
           <img src="assets/images/brand-3.png" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col">
           <img src="assets/images/brand-4.png" alt="">
         </div>
-        <div class="col-lg-2">
+        <div class="col">
           <img src="assets/images/brand-5.png" alt="">
         </div>
       </div>
@@ -251,171 +240,199 @@
 
 <!-- ############################################ -->
 
-    <div class="container-fluid m-auto text-md-center" id="ourblo">
-    </br></br></br></br></br>
+    <div class="container-fluid m-auto text-center padlr pt-5">
       <h4 style="color: orangered;">OUR BLOG</h4>
-      <span style="font-size: 31;"><b>Latest</b> News</span>
-    </div>
-    <div class="container-fluid ">
-      </br></br></br>
-      <div class="row m-auto">
-        <div class="col-lg-4 text-lg-center">
-          <img src="assets/images/news-1.jpg" alt="" style="width: 450px;">
-        </br></br>
-          <h3 style="text-align: left;padding-left: 65px;"><b>Nulls eget urna at tortor turpi</br>feugiat tristique in sit.</b></h3>
-          <div class="d-flex" style="padding-left: 56px;">
-              <img class="rounded-circle" src="/assets/images/author-2.jpg" alt="">
-              <div class="pl-2 pt-2">
+      <span style="font-size: xx-large"><b>Latest</b> News</span>
+
+      
+      <div class="row single-blog padlr">
+
+        <div class="col text-left blog-content">
+          <div class="blog-image">
+            <img src="assets/images/news-1.jpg" alt="">
+          </div>
+          <a href=""> 
+            <div class="blog-title"><p>Nulls eget urna at tortor turpi feugiat tristique in sit.</p></div>
+          </a>
+          <div class="d-flex blog-author">
+              <div class="blog-image">
+                <img class="rounded-circle" src="/assets/images/author-1.jpg" alt="">
+              </div>
+              <div class="pl-2 pt-2 author-content">
                   <div class="d-block">
-                      <p class="card-text" style="color: orangered; text-align: left;">Posted by
-                          <p>
+                      <p class="text" style="color: orangered; text-align: left;">Posted by</p>
                   </div>
                   <div class="d-block">
-                      <p class="card-text" style="text-align: left;">Isabela Moreira</p>
+                      <p class="text" style="text-align: left;">Isabela Moreira</p>
                   </div>
               </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-4 text-lg-center">
-          <img src="assets/images/news-2.jpg" alt="" style="width: 450px;">
-        </br></br>
-        <h3 style="text-align: left;padding-left: 65px;"><b>Nulls eget urna at tortor turpi</br>feugiat tristique in sit.</b></h3>
-        <div class="d-flex" style="padding-left: 56px;">
-            <img class="rounded-circle" src="/assets/images/author-2.jpg" alt="">
-            <div class="pl-2 pt-2">
-                <div class="d-block">
-                    <p class="card-text" style="color: orangered;">Posted by
-                        <p>
+
+          <div class="col text-left blog-content">
+            <div class="blog-image">
+              <img src="assets/images/news-2.jpg" alt="">
+            </div>
+            <a href="">
+              <div class="blog-title" style=""><p>Nulls eget urna at tortor turpi feugiat tristique in sit.</p></div>
+            </a>
+              <div class="d-flex blog-author">
+                <div class="blog-image">
+                  <img class="rounded-circle" src="/assets/images/author-2.jpg" alt="">
                 </div>
-                <div class="d-block">
-                    <p class="card-text">Elon Musk</p>
+                <div class="pl-2 pt-2 author-content">
+                    <div class="d-block">
+                        <p class="text" style="color: orangered; text-align: left;">Posted by</p>
+                    </div>
+                    <div class="d-block">
+                        <p class="text" style="text-align: left;">Elon Musk</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col text-left blog-content">
+              <div class="blog-image">
+                <img src="assets/images/news-3.jpg" alt="">
+              </div>
+              <a href="">
+                <div class="blog-title" style=""><p>Nulls eget urna at tortor turpi feugiat tristique in sit.</p></div>
+              </a>
+              <div class="d-flex blog-author">
+                  <div class="blog-image">
+                    <img class="rounded-circle" src="/assets/images/author-3.jpg" alt="">
+                  </div>
+                  <div class="pl-2 pt-2 author-content">
+                    <div class="d-block">
+                        <p class="text" style="color: orangered; text-align: left;">Posted by</p>
+                    </div>
+                    <div class="d-block">
+                        <p class="text" style="text-align: left;">Fiona</p>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="col-lg-4 text-lg-center">
-          <img src="assets/images/news-3.jpg" alt="" style="width: 450px;">
-        </br></br>
-        <h3 style="text-align: left;padding-left: 65px;"><b>Nulls eget urna at tortor turpi</br>feugiat tristique in sit.</b></h3>
-        <div class="d-flex" style="padding-left: 56px;">
-            <img class="rounded-circle" src="/assets/images/author-2.jpg" alt="">
-            <div class="pl-2 pt-2">
-                <div class="d-block">
-                    <p class="card-text" style="color: orangered;text-align: left">Posted by
-                        <p>
-                </div>
-                <div class="d-block">
-                    <p class="card-text" style="text-align: left;">Fiona</p>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
     </div>
 <!-- #################################### -->
-    <div class="container-fluid m-auto text-md-center" id="contactus">
-    </br></br></br></br>
-      <h4 style="color: orangered;">OUR CONTACT</h4>
-      <span style="font-size: 31;"><b>Get In</b> Touch</span>
-    </div>
-    <div class="container-fluid ">
-    </br>
-      <div class="row m-auto">
-        <div class="col-lg-4 text-lg-center">
-          
-            </br></br>
-            <ul style="list-style-type:none; text-align: left;padding-left: 330px;">
-              <li>19 Orchard ST Millburn</li>
-              <li>New Jursey, United States.</li>
-            </ul>
+
+
+    <div class="container-fluid m-auto padlr pt-5" id="contactus">
+
+      <div class="contact-title pt-5 text-center">
+        <p class="font-weight-bold" style="color: orangered;">OUR CONTACT</p>
+        <span class="xx-large" style="font-size: 31;"><b>Get In</b> Touch</span>
+      </div>
+
+      <div class="row m-auto pt-5 padlr">
+
+
+        <div class="col d-flex single-contact-info contact-color-1">
+          <div class="centerdiv bg-white contact-info-icon">
+            <i class="fa fa-2x fa-map-marker"></i>
+          </div>
+          <div class="contact-info-content">
+            <div class="text">19 Orchard ST Millburn</div>
+            <div class="text">New Jursey, United States.</div>
+          </div>
         </div>
-        <div class="col-lg-4 text-lg-center">
-          
-        </br></br>
-        <ul style="list-style-type:none; text-align: left;padding-left: 330px;">
-          <li>support@sadhinlab.com</li>
-          <li>support@sadhinlab.com</li>
-        </ul>
+
+        <div class="col d-flex single-contact-info contact-color-1">
+          <div class="contact-info-icon">
+            <i class="fa fa-2x fa-envelope"></i>
+          </div>
+          <div class="contact-info-content">
+            <div class="text">support@shadhinlab.com</div>
+            <div class="text">support@shadhinlab.com</div>
+          </div>
+        </div>
+
+        <div class="col d-flex single-contact-info contact-color-1">
+          <div class="centerdiv bg-blue contact-info-icon">
+            <i class="fa fa-2x fa-phone"></i>
+          </div>
+          <div class="contact-info-content">
+            <div class="text">+99 000 123 345</div>
+            <div class="text">+99 000 123 345</div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="contact-wrapper-form padlr pt-5">
+        <div class="d-flex contact-title">
+          <i class="fa fa-envelope pt-2"></i>
+          <div>Leave A Message</div>
+        </div>
+      </div>
+
+      <div class="row padlr pb-5">
+        <div class="col-6">
+          <div class="row pt-5">
+            <div class="col-8">
+              <label for="name">Enter Your Name</label>
+              <input class="form-control mr-sm-2" type="text" placeholder="Full Name">
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row pt-5">
+            <div class="col-8">
+              <label for="name">Enter Your Email</label>
+              <input class="form-control mr-sm-2" type="text" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row pt-5">
+            <div class="col-8">
+              <label for="name">Enter Your Message</label>
+              <textarea class="form-control" rows="10" type="text" placeholder="Enter Your Message..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <button class="main-btn btn-lg">Send Now</button>
+        </div>
+      </div>
     </div>
 
-    <div class="col-lg-4 text-lg-center">
-          
-    </br></br>
-    <ul style="list-style-type:none; text-align: left;padding-left: 330px;">
-      <li>+99 000 123 345</li>
-      <li>+88 999 123 345</li>
-    </ul>
-  </div>  
-</div>
-    </div>
-
-  <div class="container-fluid">
-  </br></br>
-    <h2><i style="margin-left: 4em" class="fa fa-envelope pt-3 text-danger"></i><b style="margin-left: 1em">Leave</b> A Message.</h2>
-    <div class="row">
-      <div class="col-6">
-        <div class="row pt-5 pl-5 ">
-          <div class="col-8" style="padding-left: 101px;">
-            <p style="font-size: 20px;">Enter Your Name</p>
-            <input class="form-control mr-sm-2" style="border: hidden;" type="text" placeholder="Full Name">
-          </div>
-      </div>
-      </div>
-      <div class="col-6">
-        <div class="row pt-5 pl-5 ">
-          <div class="col-8" style="padding-left: 101px;">
-            <p style="font-size: 20px;">Enter Your Email</p>
-            <input class="form-control mr-sm-2" style="border: hidden;" type="text" placeholder="Email">
-          </div>
-      </div>
-      </div>
-      <div class="col-12">
-        <div class="row pt-5 pl-5 ">
-          <div class="col-8" style="padding-left: 101px;">
-            <p style="font-size: 20px;">Your Message</p>
-            <input class="form-control mr-sm-2" style="border: hidden;" type="text" placeholder="Enter Your Message...">
-          </div>
-      </div>
-      </div>
-  </div>
-
-    <div class="container-fluid ">
-    </br></br></br></br>
-      <div class="row m-auto">
-        <div class="col-lg-3 text-lg-center">
-          <ul style="list-style-type:none; text-align: left;padding-left: 110px;">
-            <li><h4 style="color:rgb(98, 98, 211);">DOCTOR</h4></li></br>
-            <li id="opcst">Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit</br>Repellendus, repudiandae! Totam.</br>nemo sed? Provident.</li></br>
-            <li id="opcst">Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit</br>Repellendus,</li>
+    <div class="container-fluid padlr bottom-cover">
+      <div class="row m-auto padlr">
+        <div class="col footer-about footer-link">
+          <ul>
+            <li class="footer-title"><h4><a href="" class="title" style="color:rgb(98, 98, 211);">DOCTOR</a></h4></li>
+            <li id="opcst">Lorem ipsum dolor sit amet, consectetur adipisicing elit Repellendus, repudiandae! Totam. nemo sed? Provident.</li>
+            <li id="opcst">Lorem ipsum dolor sit amet, consectetur adipisicing elit Repellendus,</li>
           </ul>
         </div>
 
-        <div class="col-lg-3 text-lg-center">
-          <ul style="list-style-type:none; text-align: left;padding-left: 110px;">
-            <li><h4>SERVICES</h4></li></br>
-            <li id="opcst">Business Consultancy</li></br>
-            <li id="opcst">Digital Marketing</li></br>
-            <li id="opcst">Market Analyst</li></br>
+
+        <div class="col footer-about footer-link">
+          <ul>
+            <li class="footer-title"><h4><a href="" class="title">SERVICES</a></h4></li>
+            <li id="opcst">Business Consultancy</li>
+            <li id="opcst">Digital Marketing</li>
+            <li id="opcst">Market Analyst</li>
             <li id="opcst">Web Development</li>
           </ul>
         </div>
-
-        <div class="col-lg-3 text-lg-center">
-          <ul style="list-style-type:none; text-align: left;padding-left: 110px;">
-            <li><h4>ABOUT US</h4></li></br>
-            <li id="opcst">Overview</li></br>
-            <li id="opcst">Why Us</li></br>
-            <li id="opcst">Award & Recognitions</li></br>
+        <div class="col footer-about footer-link">
+          <ul>
+            <li class="footer-title"><h4><a href="" class="title">ABOUT US</a></h4></li>
+            <li id="opcst">Overview</li>
+            <li id="opcst">Why Us</li>
+            <li id="opcst">Award & Recognitions</li>
             <li id="opcst">Team</li>
           </ul>
         </div>
 
-        <div class="col-lg-3 text-lg-center">
-          <ul style="list-style-type:none; text-align: left;padding-left: 110px;">
-            <li><h4>CONTACTR INFO</h4></li></br>
-            <li id="opcst">21 King Street, Mellbourne</br>Victoria, 1202 Australia</li></br>
-            <li id="opcst">support@uideck.com</li></br>
-            <li id="opcst">+99 000 555 66 22</li></br>
+
+        <div class="col footer-about footer-link">
+          <ul>
+            <li class="footer-title"><h4><a href="" class="title">CONTACT INFO</a></h4></li>
+            <li id="opcst">21 King Street, Mellbourne Victoria, 1202 Australia</li>
+            <li id="opcst">support@uideck.com</li> 
+            <li id="opcst">+99 000 555 66 22</li> 
 
             <ul class="d-flex pt-3" style="list-style-type:none;">
               <li>
@@ -441,25 +458,49 @@
                       <i class="fab fa-linkedin-in pt-3 text-secondary"></i>
                   </a>
               </li>
-          </ul>
+            </ul>
           </ul>
         </div>
+
+      </div>
+        <div class="text-center pt-5">
+          <h6>&copy; <span id="opcst">2022 Crafted by</span> <span style="color: orangered;">Shadhin Lab</span> <span id="opcst">All Rights Reserved.</span></h6>
       </div>
     </div>
-    <div class="text-lg-center m-auto">
-    </br></br>
-      <h6><i class="fas fa-copyright"></i> <span id="opcst">Crafted by</span> <span style="color: orangered;">Shadhin Lab</span> <span id="opcst">All Rights Reserved.</span></h6>
-    </div>
+
 
     <a href="#" class="float">
-      <i style="margin-top:11px;" class="fas fa-chevron-up"></i>
-      </a>
+      <i class="fas fa-chevron-up mt-2"></i>
+    </a>
 
 
     <script type="text/javascript">
-          $(".num").counterUp({delay: 100, time: 1000});
+      $(".num").counterUp({delay: 100, time: 1000});
+      
+      ScrollReveal().reveal('.col');
+      ScrollReveal().reveal('.container-fluid');
+      ScrollReveal().reveal('.container');
+
     </script>
 
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="jquery.scroll-reveal.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/headroom.min.js"></script>
+    <script src="./assets/js/jquery.appear.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/jquery.nav.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/scrollIt.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js "></script>
+    <script src="./assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>
